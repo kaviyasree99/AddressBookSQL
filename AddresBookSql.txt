@@ -1,4 +1,4 @@
- #UC-1
+                                      #UC-1
 
 mysql> create database AddressBook;
 Query OK, 1 row affected (0.05 sec)
@@ -29,7 +29,7 @@ mysql> select database();
 1 row in set (0.00 sec)
 
 ----------------------------------------------------
-#UC-2
+                                       #UC-2
 
 create table addressbooks
     -> (
@@ -60,3 +60,22 @@ mysql> describe addressbooks
 7 rows in set (0.05 sec)
 
 ----------------------------------------------------------------------------
+                                      #UC-3
+
+mysql> insert into addressbooks(firstname, lastname, address, city, zip, phonenumber) VALUES
+    -> ('kavita', 'Sree', 'B/11', 'Karur', '510301', '958146'),
+    -> ('ANUSHA', 'Raj','c-12', 'Coimbatore','345432', '83047'),
+    -> ('Vive', 'Samual', 'a/34', 'Erode', '510302', '83047');
+Query OK, 3 rows affected (0.04 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql> select * from addressbooks;
++----+-----------+----------+------------+---------+--------+-------------+
+| id | firstname | lastname | address    | city    | zip    | phonenumber |
++----+-----------+----------+------------+---------+--------+-------------+
+|  1 | kavita     | Sree    | B/11 | Karur   | 510301 |  9581477386 |
+|  2 | ANUSHA     | Raj     | c-12 | Coimbatore  | 345432 |  8374757047 |
+|  3 | Vive       | Samual  | a/34 | Erode | 510302 |  9985748631 |
++----+-----------+----------+---------
+
+--------------------------------------------------------------------------------
