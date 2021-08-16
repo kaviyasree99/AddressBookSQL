@@ -79,3 +79,19 @@ mysql> select * from addressbooks;
 +----+-----------+----------+---------
 
 --------------------------------------------------------------------------------
+                                    #UC-4
+
+mysql> update addressbooks set firstname = 'Priya' where lastname ='Samual';
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from addressbooks;
++----+-----------+----------+------------+---------+--------+-------------+
+| id | firstname | lastname | address    | city    | zip    | phonenumber |
++----+-----------+----------+------------+---------+--------+-------------+
+|  1 | kavita     | Sree    | B/11 | Karur   | 510301 |  9581477386 |
+|  2 | ANUSHA     | Raj     | c-12 | Coimbatore  | 345432 |  8374757047 |
+|  3 | Priya       | Samual  | a/34 | Erode | 510302 |  9985748631 |
+3 rows in set (0.01 sec)
+
+------------------------------------------------------------------------------
