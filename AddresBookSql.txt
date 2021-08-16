@@ -110,3 +110,15 @@ mysql> select * from addressbooks;
 2 rows in set (0.01 sec)
 
 ---------------------------------------------------------------------------------
+                                        #UC-6
+ again adding names in a table
+
+mysql> select lastname from addressbooks where city='Nelson';
++----------+
+| lastname |
++----------+
+| Sree  |
++----------+
+1 row in set (0.00 sec)
+
+----------------------------------------------------------------------------------
